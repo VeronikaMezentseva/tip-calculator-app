@@ -25,6 +25,7 @@
                 class="card__input card__input_bill"
                 type="text"
                 placeholder="0"
+                id="bill-input"
               />
               <span class="bill-span"></span>
             </div>
@@ -32,7 +33,7 @@
           <div class="card__tip">
             <h2 class="card__title">Select Tip %</h2>
             <div class="card__tip-container">
-              <div>
+              <div class="select-tip">
                 <input
                   class="hidden-element"
                   type="radio"
@@ -43,7 +44,7 @@
                   <p>5%</p>
                 </label>
               </div>
-              <div>
+              <div class="select-tip">
                 <input
                   class="hidden-element"
                   type="radio"
@@ -54,7 +55,7 @@
                   <p>10%</p>
                 </label>
               </div>
-              <div>
+              <div class="select-tip">
                 <input
                   class="hidden-element"
                   type="radio"
@@ -65,7 +66,7 @@
                   <p>15%</p>
                 </label>
               </div>
-              <div>
+              <div class="select-tip">
                 <input
                   class="hidden-element"
                   type="radio"
@@ -76,7 +77,7 @@
                   <p>25%</p>
                 </label>
               </div>
-              <div>
+              <div class="select-tip">
                 <input
                   class="hidden-element"
                   type="radio"
@@ -87,7 +88,7 @@
                   <p>50%</p>
                 </label>
               </div>
-              <div>
+              <div class="select-tip">
                 <input class="tip-custom" type="text" placeholder="Custom" />
               </div>
             </div>
@@ -99,6 +100,7 @@
                 class="card__input card__input_people"
                 type="text"
                 placeholder="0"
+                id="people-input"
               />
               <span class="people-span"></span>
             </div>
@@ -121,7 +123,7 @@
               <p class="card__total-price">$0.00</p>
             </div>
           </div>
-          <button class="card__reset-button">reset</button>
+          <button class="card__reset-button" disabled>reset</button>
         </div>
       </div>
     </main>

@@ -186,10 +186,19 @@
 .card__reset-button {
   border-radius: 5px;
   padding: 8px;
-  opacity: .3;
-  color: $dark-cyan;
   font-weight: 700;
   font-size: 18px;
-  text-transform: uppercase;
+  color: $dark-cyan;
   background-color: $primary-color;
+  text-transform: uppercase;
+  &:disabled {
+  opacity: .3;
+  background-color: $primary-color;
+  pointer-events: none;
+}
+  &:hover {
+    color: $dark-cyan;
+    background-color: $light-grayish-cyan;
+    transition: .2s;
+  }
 }
