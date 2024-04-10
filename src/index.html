@@ -1,18 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Tip calculator app</title>
-</head>
-<body>
-  <main>
-    <p>Hello!</p>
-  </main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Tip calculator app</title>
+  </head>
+  <body class="body">
+    <head class="header">
+      <h1 class="title">spli<br />tter</h1>
+    </head>
+    <main class="main">
+      <div class="card-container">
+        <div class="card card_setter">
+          <div class="card__bill">
+            <h2 class="card__title">Bill</h2>
+            <div class="card__input card__input_bill">
+              <input
+                class="card__input card__input_bill"
+                type="text"
+                placeholder="0"
+              />
+              <span class="bill-span"></span>
+            </div>
+          </div>
+          <div class="card__tip">
+            <h2 class="card__title">Select Tip %</h2>
+            <div class="card__tip-container">
+              <div>
+                <input
+                  class="hidden-element"
+                  type="radio"
+                  name="tip"
+                  id="tip-5"
+                />
+                <label class="tip-button" for="tip-5">
+                  <p>5%</p>
+                </label>
+              </div>
+              <div>
+                <input
+                  class="hidden-element"
+                  type="radio"
+                  name="tip"
+                  id="tip-10"
+                />
+                <label class="tip-button" for="tip-10">
+                  <p>10%</p>
+                </label>
+              </div>
+              <div>
+                <input
+                  class="hidden-element"
+                  type="radio"
+                  name="tip"
+                  id="tip-15"
+                />
+                <label class="tip-button" for="tip-15">
+                  <p>15%</p>
+                </label>
+              </div>
+              <div>
+                <input
+                  class="hidden-element"
+                  type="radio"
+                  name="tip"
+                  id="tip-25"
+                />
+                <label class="tip-button" for="tip-25">
+                  <p>25%</p>
+                </label>
+              </div>
+              <div>
+                <input
+                  class="hidden-element"
+                  type="radio"
+                  name="tip"
+                  id="tip-50"
+                />
+                <label class="tip-button" for="tip-50">
+                  <p>50%</p>
+                </label>
+              </div>
+              <div>
+                <input class="tip-custom" type="text" placeholder="Custom" />
+              </div>
+            </div>
+          </div>
+          <div class="card__people">
+            <h2 class="card__title">Number of People</h2>
+            <div class="card__input card__input_people">
+              <input
+                class="card__input card__input_people"
+                type="text"
+                placeholder="0"
+              />
+              <span class="people-span"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card card_counter">
+          <div class="card__price-container">
+            <div class="card__tip-amount">
+              <div>
+                <h2 class="card__title_counter">Tip Amount</h2>
+                <p class="card__paragraph_counter">/ person</p>
+              </div>
+              <p class="card__tip-price">$0.00</p>
+            </div>
+            <div class="card__total">
+              <div>
+                <h2 class="card__title_counter">Total</h2>
+                <p class="card__paragraph_counter">/ person</p>
+              </div>
+              <p class="card__total-price">$0.00</p>
+            </div>
+          </div>
+          <button class="card__reset-button">reset</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Nikapyka</a>.
+    </div>
+  </body>
 </html>
